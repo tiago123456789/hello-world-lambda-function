@@ -1,6 +1,6 @@
 const AWS = require("aws-sdk")
 
-var credentials = new AWS.SharedIniFileCredentials({ profile: 'tiago' });
+var credentials = new AWS.SharedIniFileCredentials({ profile: 'profile_here' });
 AWS.config.credentials = credentials;
 
 const lambdaClient = new AWS.Lambda({
